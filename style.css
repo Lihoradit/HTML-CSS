@@ -34,11 +34,6 @@ header {
     }
 }
 
-.aboutme {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .top {
     flex-direction: row;
@@ -75,17 +70,19 @@ header {
     justify-content: center;
     padding: 20px;
     border-width: 2px;
-    border-color: rgb(122, 25, 25);
+    border-color: rgba(3, 177, 208, 0.363);
     border-style: solid;
     border-radius: 20px;
 
 }
 
 .aboutme {
+    flex-direction: row;
+    align-items: center;
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: rgb(54, 52, 61);
+    backdrop-filter: blur(20px);
     margin-left: 50px;
     margin-right: 50px;
     border-width: 3px;
@@ -94,7 +91,8 @@ header {
     border-radius: 20px;
 
 }
-.text_link{
-color:#FFFFFF;
+
+.text_link {
+    color: #FFFFFF;
     display: inline-block;
 }
