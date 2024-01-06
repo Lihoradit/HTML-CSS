@@ -38,14 +38,25 @@ header {
 .top {
     flex-direction: row;
 
-    .about__content {
+    background-color: rgb(16, 14, 26);
+
+
+    min-height: 100%;
+
+
+    background-attachment: fixed;
+    background-position: 100%;
+    background-repeat: repeat;
+    background-size: contain;
+
+    .me_content {
         display: flex;
         font-size: 25px;
         color: #FFFFFF;
         display: inline-block;
     }
 
-    .about__photo {
+    .my_photo {
         max-block-size: 300px;
         margin-left: 20px;
         display: flex;
@@ -62,7 +73,14 @@ header {
 
 }
 
-.about__content {
+.about_title {
+    display: flex;
+    font-size: 70px;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.me_content {
     width: 700px;
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -70,29 +88,82 @@ header {
     justify-content: center;
     padding: 20px;
     border-width: 2px;
-    border-color: rgba(3, 177, 208, 0.363);
+    border-color: #FFFFFF;
     border-style: solid;
     border-radius: 20px;
 
 }
 
-.aboutme {
+.me {
     flex-direction: row;
     align-items: center;
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     margin-left: 50px;
     margin-right: 50px;
     border-width: 3px;
     border-color: rgb(255, 255, 255);
     border-style: solid;
     border-radius: 20px;
-
+    margin-bottom: 100px;
 }
 
 .text_link {
     color: #FFFFFF;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.about_content {
+    backdrop-filter: blur(5px);
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 200px;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.item {
+    height: 100px;
+}
+
+.l_p {
+    max-block-size: 100px;
+    border-radius: 20px;
+}
+
+.tooltip {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.tooltip:before {
+    display: flex;
+    content: attr(data-title);
+    position: absolute;
+    bottom: 110px;
+    padding: 10px;
+    justify-content: center;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .65);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
 }
