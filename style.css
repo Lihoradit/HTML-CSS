@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: rgb(25, 28, 36);
+}
+
+header {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    text-indent: 30px;
+    justify-content: end;
+    display: flex;
+
+    .header__link {
+        font-style: normal;
+        font-weight: 100%;
+        font-style: 20px;
+        line-height: 23px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 25px;
+
+    }
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top {
+    flex-direction: row;
+
+    .about__content {
+        display: flex;
+        font-size: 25px;
+        color: #FFFFFF;
+        display: inline-block;
+    }
+
+    .about__photo {
+        max-block-size: 300px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
+
+.title {
+    margin-left: 30px;
+    font-size: 70px;
+    color: #FFFFFF;
+
+}
+
+.about__content {
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 32px;
+    justify-content: center;
+    padding: 20px;
+    border-width: 2px;
+    border-color: rgb(122, 25, 25);
+    border-style: solid;
+    border-radius: 20px;
+
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(54, 52, 61);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 20px;
+
+}
+.text_link{
+color:#FFFFFF;
+    display: inline-block;
+}
